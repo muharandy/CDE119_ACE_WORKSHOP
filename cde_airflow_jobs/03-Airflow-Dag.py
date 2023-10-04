@@ -48,20 +48,20 @@ from airflow.operators.dummy_operator import DummyOperator
 from airflow.operators.http_operator import SimpleHttpOperator
 import pendulum
 
-username = "pdefusco_082223"
+username = "fajar"
 
 print("Running as Username: ", username)
 
-cde_job_name_03_A = "job3A" #Replace with CDE Job Name you used in the UI
-cde_job_name_03_B = "job3B" #Replace with CDE Job Name you used in the UI
+cde_job_name_03_A = "03-A-ETL" #Replace with CDE Job Name you used in the UI
+cde_job_name_03_B = "03-B-Reports" #Replace with CDE Job Name you used in the UI
 
 #DAG instantiation
 default_args = {
-    'owner': "pauldefusco",
+    'owner': "fajar",
     'retry_delay': timedelta(seconds=10),
     'depends_on_past': False,
     'start_date': datetime(2022,11,22,8), #Start Date must be in the past
-    'end_date': datetime(2023,9,30,8) #End Date must be in the future
+    'end_date': datetime(2023,12,30,8) #End Date must be in the future
 }
 
 dag_name = '{}-03-airflow-pipeline'.format(username)

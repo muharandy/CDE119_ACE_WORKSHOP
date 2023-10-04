@@ -1,0 +1,9 @@
+[general]
+data_lake_name: hdfs://cdp/
+s3BucketName: hdfs://cdp/user/admin/cde-workshop/data
+username: admin
+
+[general]
+data_lake_name: abfs://data@seindoazureus.dfs.core.windows.net
+s3BucketName: abfs://data@seindoazureus.dfs.core.windows.net/staging
+username: fajarmuharandy

@@ -1,0 +1,4 @@
+user: admin
+vcluster-endpoint: https://xxlcdj9v.cde-w2zlc298.apps.node05.esala.local/dex/api/v1
+tls-ca-certs: /home/fajar/Projects/cde_ace_hol/CDE119_ACE_WORKSHOP/resources_files/ca.pem
+tls-insecure: false

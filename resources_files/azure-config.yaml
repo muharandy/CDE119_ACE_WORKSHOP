@@ -1,0 +1,4 @@
+user: fajarmuharandy
+vcluster-endpoint: https://72bh8gct.cde-hwvkzdmb.se-indo.a465-9q4k.cloudera.site/dex/api/v1
+#tls-ca-certs: /home/fajar/Projects/cde_ace_hol/CDE119_ACE_WORKSHOP/resources_files/ca.pem
+#tls-insecure: false
