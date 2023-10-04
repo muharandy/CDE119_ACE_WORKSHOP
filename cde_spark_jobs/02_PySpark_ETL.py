@@ -106,6 +106,7 @@ print("SPARK UDF")
 factory_data.write.mode("overwrite").saveAsTable('CDE_WORKSHOP_{0}.EXPERIMENTAL_MOTORS_ENRICHED_{0}'.format(username), format="parquet")
 
 spark.udf.register("TSTAMP_TO_STRING", simple_udf.tstampToString)
+#update this bug
 spark.sql('SELECT TSTAMP_TO_STRING(unix_timestamp(timestamp)) AS tstamp_str, timestamp FROM CDE_WORKSHOP_{0}.EXPERIMENTAL_MOTORS_ENRICHED_{0} LIMIT 10'.format(username)).show()
 
 #---------------------------------------------------
